@@ -152,8 +152,84 @@ a {
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.Award {
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.footer .footer-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1040px) {
+  header {
+    padding: 12px 12px;
+  }
+  .sticky {
+    padding: 10px 20px;
+  }
+  header .navbar-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-right: 0;
+    top: 80px;
+  }
+
+  header .navbar-link {
+    display: block;
+  }
+  header .navigation .active {
+    z-index: 888;
+    position: fixed;
+    background: white;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    transition: 0.3s ease;
+  }
+  .menu-btn {
+    position: absolute;
+    background-size: 40px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .menu-btn.active {
+    z-index: 999;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .section-title {
+    font-size: 1.8em;
+  }
+  .main .content {
+    flex-direction: column;
+  }
 }
